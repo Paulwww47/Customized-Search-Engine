@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>搜索引擎设置</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>搜索引擎设置</h1>
+        
+        <div class="search-engines">
+            <h2 class="section-title">当前搜索引擎列表</h2>
+            <p>拖动搜索引擎可以调整顺序</p>
+            <div id="engineList" class="engine-list"></div>
+            
+            <h2 class="section-title">添加新搜索引擎</h2>
+            <form id="addEngineForm">
+                <div class="form-group">
+                    <label>搜索引擎名称：</label>
+                    <input type="text" id="engineName" required placeholder="例如：Google">
+                </div>
+                <div class="form-group">
+                    <label>搜索URL：</label>
+                    <input type="text" id="engineUrl" required placeholder="例如：https://www.google.com/search?q=%s">
+                    <div class="hint">使用 %s 表示搜索关键词位置</div>
+                </div>
+                <button type="submit">添加搜索引擎</button>
+            </form>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html> 
